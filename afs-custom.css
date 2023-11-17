@@ -1,13 +1,14 @@
 /* OEM Font Embed */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700;900&display=swap');
+@import url("https://use.typekit.net/ayp1ibk.css");
 /* OEM Font Embed */
 
 
 
 /* OEM Font */
 .acs-wrapper { 
-font-family: 'Archivo', sans-serif;
-font-weight: 300
+font-family: 'proxima-nova', sans-serif;
+font-weight: 300;
+letter-spacing: 1px
 }
 /* OEM Font */
 
@@ -15,11 +16,11 @@ font-weight: 300
 
 /* Heading Tags */
 .acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
-font-family: 'Archivo', sans-serif;
-font-weight: 900;
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
 line-height: 1.2;
 text-transform: uppercase;
-font-style: italic
+letter-spacing: clamp(.1vw, .5vw, 1vw)
 }
 
 .acs-h1 {
@@ -78,28 +79,33 @@ font-size: 1.2rem !important;
 
 /* OEM Font Variables */
 .af-brand-lt {
-font-family: 'Archivo', sans-serif !important;
+font-family: 'proxima-nova', sans-serif !important;
 font-weight: 300 !important;
 }
 
-.af-brand-rg {
-font-family: 'Archivo', sans-serif !important;
-font-weight: 400 !important;
-}
-
 .af-brand-md {
-font-family: 'Archivo', sans-serif !important;
+font-family: 'proxima-nova', sans-serif !important;
 font-weight: 500 !important;
 }
 
 .af-brand-bd {
-font-family: 'Archivo', sans-serif !important;
+font-family: 'proxima-nova', sans-serif !important;
 font-weight: 700 !important;
 }
 
-.af-brand-blk {
-font-family: 'Archivo', sans-serif !important;
-font-weight: 900 !important;
+.af-brand-wide-rg {
+font-family: 'proxima-nova-extra-wide', sans-serif !important;
+font-weight: 400 !important;
+}
+
+.af-brand-wide-md {
+font-family: 'proxima-nova-extra-wide', sans-serif !important;
+font-weight: 500 !important;
+}
+
+.af-brand-wide-bd {
+font-family: 'proxima-nova-extra-wide', sans-serif !important;
+font-weight: 700 !important;
 }
 
 .acs-bold {
@@ -112,21 +118,15 @@ font-weight: 700;
 
 /* Variables */
 .acs-wrapper {
---accent: #ED1D26;
---accent2: #CD0001;
---accent3: #DAC27B;
---accent4: #CEAC3F;
+--accent: #DAC27B;
 --black: #000000; 
 --white: #ffffff; 
---gray: #E7E7E7; 
---gray2: #EBEBEB; 
---gray3: #EEEEEE;
---gray4: #E4E4E4;
---dark: #4D4D4D;
---dark2: #333333;
---dark3: #111111; 
---dark4: #323232;
---bold-font: 'Archivo', sans-serif;
+--gray: #F9F9F9; 
+--gray2: #F5F5F5;
+--gray3: #EAEAEA;
+--gray4: #EEEEEE;
+--dark: #1D1D1D;
+--bold-font: 'proxima-nova', sans-serif;
 }
 /* Variables */
 
@@ -151,23 +151,8 @@ color: var(--gray3)
 .acs-gray4 {
 color: var(--gray4)
 }
-.acs-gray5 {
-color: var(--gray5)
-}
-.acs-gray6 {
-color: var(--gray6)
-}
-.acs-gray7 {
-color: var(--gray7)
-}
 .acs-dark {
 color: var(--dark)
-}
-.acs-dark2 {
-color: var(--dark2)
-}
-.acs-dark3 {
-color: var(--dark3)
 }
 /* Text Colors */
 
@@ -196,63 +181,33 @@ color: var(--accent5)
 /* BG Colors */
 .acs-bg-accent {
 --acs-bg-opacity: 1;
-background-color: var(--accent);
-background-color: rgba(237,29,38, var(--acs-bg-opacity))
-}
-.acs-bg-accent2 {
---acs-bg-opacity: 1;
-background-color: var(--accent2);
-background-color: rgba(205,0,1, var(--acs-bg-opacity))
-}
-.acs-bg-accent3 {
---acs-bg-opacity: 1;
 background-color: var(--accent2);
 background-color: rgba(218,194,123, var(--acs-bg-opacity))
-}
-.acs-bg-accent4 {
---acs-bg-opacity: 1;
-background-color: var(--accent3);
-background-color: rgba(206,172,63, var(--acs-bg-opacity))
-}
-.acs-bg-accent5 {
---acs-bg-opacity: 1;
-background-color: var(--accent4);
-background-color: rgba(240,186,40, var(--acs-bg-opacity))
 }
 .acs-bg-gray {
 --acs-bg-opacity: 1;
 background-color: var(--gray);
-background-color: rgba(231,231,231, var(--acs-bg-opacity))
+background-color: rgba(249,249,249, var(--acs-bg-opacity))
 }
 .acs-bg-gray2 {
 --acs-bg-opacity: 1;
 background-color: var(--gray2);
-background-color: rgba(235,235,235, var(--acs-bg-opacity))
+background-color: rgba(245,245,245, var(--acs-bg-opacity))
 }
 .acs-bg-gray3 {
 --acs-bg-opacity: 1;
 background-color: var(--gray3);
-background-color: rgba(238,238,238, var(--acs-bg-opacity))
+background-color: rgba(234,234,234, var(--acs-bg-opacity))
 }
 .acs-bg-gray4 {
 --acs-bg-opacity: 1;
 background-color: var(--gray4);
-background-color: rgba(228,228,228, var(--acs-bg-opacity))
+background-color: rgba(238,238,238, var(--acs-bg-opacity))
 }
 .acs-bg-dark {
 --acs-bg-opacity: 1;
 background-color: var(--dark);
-background-color: rgba(77,77,77, var(--acs-bg-opacity))
-}
-.acs-bg-dark2 {
---acs-bg-opacity: 1;
-background-color: var(--dark2);
-background-color: rgba(51,51,51, var(--acs-bg-opacity))
-}
-.acs-bg-dark3 {
---acs-bg-opacity: 1;
-background-color: var(--dark3);
-background-color: rgba(17,17,17, var(--acs-bg-opacity))
+background-color: rgba(29,29,29, var(--acs-bg-opacity))
 }
 /* BG Colors */
 
@@ -261,146 +216,269 @@ background-color: rgba(17,17,17, var(--acs-bg-opacity))
 /* Link Accent */
 .acs-link-accent {
 text-decoration: none;
-color: var(--accent) !important;
+color: var(--accent3) !important;
 transition: all 0.2s ease-in-out 0s;
 }
 .acs-link-accent:hover {
 text-decoration: underline;
-color: var(--accent2) !important; 
+color: var(--accent4) !important; 
 }
 
 .acs-link-accent2 {
 text-decoration: none;
-color: var(--accent3) !important;
+color: var(--dark2) !important;
 transition: all 0.2s ease-in-out 0s;
 }
 .acs-link-accent2:hover {
 text-decoration: underline;
-color: var(--accent4) !important; 
+color: var(--dark3) !important; 
 }
 
 .acs-link-accent3 {
 text-decoration: none;
-color: var(--dark2) !important;
+color: var(--white) !important;
 transition: all 0.2s ease-in-out 0s;
 }
 .acs-link-accent3:hover {
 text-decoration: underline;
-color: var(--dark3) !important; 
+opacity: .75; 
 }
 
 .acs-link-accent4 {
 text-decoration: none;
-color: var(--white) !important;
+color: var(--accent) !important;
 transition: all 0.2s ease-in-out 0s;
 }
 .acs-link-accent4:hover {
 text-decoration: underline;
-opacity: .75; 
+color: var(--accent2) !important; 
 }
 /* Link Accent */
-
 
 
 /* BUTTONS: START */
 /* Button 1 */
 .acs-button {
-background: rgb(237,29,38);
-background: linear-gradient(180deg, rgba(237,29,38,1) 0%, rgba(205,0,1,1) 100%);
-border-radius: 5px;
-border: .1rem solid var(--accent2);
-display: inline-block;
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
+font-size: .75rem;
+letter-spacing: 4px;
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
 text-align: center;
-color: var(--white) !important;
-text-decoration: none !important;
-padding: 1rem 2rem;
-font-family: 'Archivo', sans-serif;
-font-weight: 700;
-line-height: 1;
-text-transform: uppercase;
-font-size: .8125rem;
-letter-spacing: .5px;
-min-width: 180px;
-transition: 250ms ease-in-out 0ms;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--white);
+background-color: var(--white);
+text-transform: uppercase
 }
 .acs-button:hover {
-background: rgb(237,29,38);
-background: linear-gradient(0deg, rgba(237,29,38,1) 0%, rgba(205,0,1,1) 100%);
+background-color: transparent;
+color: var(--white);
+border: solid 2px var(--white)
 }
 
 /* Button 2 */
 .acs-button2 {
-background: rgb(50,50,50);
-background: linear-gradient(180deg, rgba(50,50,50,1) 0%, rgba(0,0,0,1) 100%);
-border-radius: 5px;
-border: .1rem solid var(--black);
-display: inline-block;
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
+font-size: .75rem;
+letter-spacing: 4px;
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
 text-align: center;
-color: var(--white);
-text-decoration: none !important;
-padding: 1rem 2rem;
-font-family: 'Archivo', sans-serif;
-font-weight: 700;
-line-height: 1;
-text-transform: uppercase;
-font-size: .8125rem;
-letter-spacing: .5px;
-min-width: 180px;
-transition: 250ms ease-in-out 0ms;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--white);
+background-color: transparent;
+text-transform: uppercase
 }
 .acs-button2:hover {
-background: rgb(50,50,50);
-background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(0,0,0,1) 100%);
+background-color: var(--white);
+color: var(--black);
+border: solid 2px var(--white)
 }
 
 /* Button 3 */
 .acs-button3 {
-background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);
-border-radius: 5px;
-border: .1rem solid var(--gray3);
-display: inline-block;
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
+font-size: .75rem;
+letter-spacing: 4px;
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
 text-align: center;
-color: var(--black);
-text-decoration: none !important;
-padding: 1rem 2rem;
-font-family: 'Archivo', sans-serif;
-font-weight: 700;
-line-height: 1;
-text-transform: uppercase;
-font-size: .8125rem;
-letter-spacing: .5px;
-min-width: 180px;
-transition: 250ms ease-in-out 0ms;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--white);
+border: 2px solid var(--black);
+background-color: var(--black);
+text-transform: uppercase
 }
 .acs-button3:hover {
-background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);
+background-color: transparent;
+color: var(--black);
+border: solid 2px var(--black)
 }
 
 /* Button 4 */
 .acs-button4 {
-background: rgb(218,194,123);
-background: linear-gradient(180deg, rgba(218,194,123,1) 0%, rgba(206,172,63,1) 100%);
-border-radius: 5px;
-border: .1rem solid var(--accent3);
-display: inline-block;
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
+font-size: .75rem;
+letter-spacing: 4px;
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
 text-align: center;
-color: var(--white);
-text-decoration: none !important;
-padding: 1rem 2rem;
-font-family: 'Archivo', sans-serif;
-font-weight: 700;
-line-height: 1;
-text-transform: uppercase;
-font-size: .8125rem;
-letter-spacing: .5px;
-min-width: 180px;
-transition: 250ms ease-in-out 0ms;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--black);
+background-color: transparent;
+text-transform: uppercase
 }
 .acs-button4:hover {
-background: rgb(218,194,123);
-background: linear-gradient(0deg, rgba(218,194,123,1) 0%, rgba(206,172,63,1) 100%);
+background-color: var(--black);
+color: var(--white);
+border: solid 2px var(--black)
+}
+
+/* Button 5 */
+.acs-button5 {
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
+font-size: .75rem;
+letter-spacing: 4px;
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--white);
+border: 2px solid var(--black);
+background-color: var(--black);
+text-transform: uppercase
+}
+.acs-button5:hover {
+background-color: var(--white);
+color: var(--black);
+border: solid 2px var(--black)
+}
+
+/* Button 6 */
+.acs-button6 {
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
+font-size: .75rem;
+letter-spacing: 4px;
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--black);
+border: 2px solid var(--black);
+background-color: var(--white);
+text-transform: uppercase
+}
+.acs-button6:hover {
+background-color: var(--black);
+color: var(--white);
+border: solid 2px var(--black)
+}
+
+/* Button 7 */
+.acs-button7 {
+font-family: 'proxima-nova-extra-wide', sans-serif;
+font-weight: 500;
+font-size: .75rem;
+letter-spacing: 4px;
+transition: all 150ms cubic-bezier(0.335, 0.015, 0.46, 0.995) 0s;
+box-sizing: border-box;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+padding: 0px 20px;
+min-width: 220px;
+height: 50px;
+border-radius: 0px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+appearance: none;
+color: var(--white);
+border: 2px solid var(--white);
+background-color: transparent;
+text-transform: uppercase
+}
+.acs-button7:hover {
+background-color: var(--white);
+color: var(--black);
+border: solid 2px var(--white)
 }
 /* BUTTONS: END */
 
