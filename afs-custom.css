@@ -5,7 +5,7 @@
 
 
 /* OEM Font */
-.acs-wrapper { 
+.acs-wrapper, .acs-oem-brand { 
 font-family: 'proxima-nova', sans-serif;
 font-weight: 300;
 letter-spacing: 1px
@@ -117,8 +117,8 @@ font-weight: 700;
 
 
 /* Variables */
-.acs-wrapper {
---accent: #DAC27B;
+.acs-wrapper, .acs-oem-brand {
+--accent: #39b54a;
 --black: #000000; 
 --white: #ffffff; 
 --gray: #F9F9F9; 
@@ -182,7 +182,7 @@ color: var(--accent5)
 .acs-bg-accent {
 --acs-bg-opacity: 1;
 background-color: var(--accent2);
-background-color: rgba(218,194,123, var(--acs-bg-opacity))
+background-color: rgba(57,181,74, var(--acs-bg-opacity))
 }
 .acs-bg-gray {
 --acs-bg-opacity: 1;
