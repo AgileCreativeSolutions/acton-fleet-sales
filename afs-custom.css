@@ -181,8 +181,8 @@ color: var(--accent5)
 /* BG Colors */
 .acs-bg-accent {
 --acs-bg-opacity: 1;
-background-color: var(--accent2);
-background-color: rgba(57,181,74, var(--acs-bg-opacity))
+background-color: var(--accent);
+background-color: rgba(210,57,49, var(--acs-bg-opacity))
 }
 .acs-bg-gray {
 --acs-bg-opacity: 1;
@@ -216,7 +216,7 @@ background-color: rgba(29,29,29, var(--acs-bg-opacity))
 /* Link Accent */
 .acs-link-accent {
 text-decoration: none !important;
-color: var(--accent3) !important;
+color: var(--accent) !important;
 transition: all 0.2s ease-in-out 0s;
 }
 .acs-link-accent:hover {
